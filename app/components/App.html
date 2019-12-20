@@ -1,0 +1,38 @@
+<Page>
+    <ActionBar title="Dinamarca" android:flat="true"/>
+    <TabView android:tabBackgroundColor="#53ba82"
+             android:tabTextColor="#c4ffdf"
+             android:selectedTabTextColor="#ffffff"
+             androidSelectedTabHighlightColor="#ffffff">
+        <TabViewItem title="Init Firebase">
+            <FlexboxLayout flexDirection="column">
+                                   <Button width="42.5%"
+                                           :isEnabled="!ctrlInitFirebase"
+                                           backgroundColor="#3c495e"
+                                           class="text" height="25%"
+                                           :text="!ctrlInitFirebase ? 'Iniciar': 'Está Iniciado'"
+                                           @tap="initFirebase()"/>
+                <ListView for="deviceData in deviceDataApp1" >
+                    <v-template>
+                        <StackLayout backgroundColor="#3c495e">
+                            <Label class="text" :text="deviceData.qrScanned" />
+                            <Label class="text" :text="deviceData.locationScanned.latitude" />
+                            <Label class="text" :text="deviceData.locationScanned.longitude" />
+                        </StackLayout>
+                    </v-template>
+                </ListView>
+            </FlexboxLayout>
+        </TabViewItem>
+        <TabViewItem title="Get IMEI">
+            <FlexboxLayout  flexWrap="wrap" alignItems="flex-start" >
+                <Button width="42.5%" backgroundColor="#3c495e"  class="text" height="25%" text="getDeviceData" @tap="getDeviceData()"/>
+                <Button width="42.5%" height="25%" backgroundColor="#3c495e"  class="text" text="sendDevicesData" @tap="verifyIMEI()"/>
+            </FlexboxLayout>
+        </TabViewItem>
+        <TabViewItem title="Tab 3">
+            <GridLayout columns="*" rows="*">
+                <Label class="message" text="Tab 3 Content" col="0" row="0"/>
+            </GridLayout>
+        </TabViewItem>
+    </TabView>
+</Page>

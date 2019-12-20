@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "394172951657",
+    "firebase_url": "https://dinamarca-b5bc9.firebaseio.com",
+    "project_id": "dinamarca-b5bc9",
+    "storage_bucket": "dinamarca-b5bc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394172951657:android:83770b0d977d1587a3c6f8",
+        "android_client_info": {
+          "package_name": "dinamarca.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394172951657-u6tktm21de5nfqqqhku0k6bdfpvjvdh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC90mlr9yiPPhH4FzG7ziqf_gOxlR4-uEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394172951657-u6tktm21de5nfqqqhku0k6bdfpvjvdh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
